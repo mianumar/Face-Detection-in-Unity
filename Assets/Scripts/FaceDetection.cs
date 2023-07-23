@@ -41,6 +41,7 @@ public class FaceDetection : MonoBehaviour
             // Do something with the detected
             // 
             Debug.Log(face);
+            Debug.Log($"Face {face}");
         }
     }
 
