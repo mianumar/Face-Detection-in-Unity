@@ -40,6 +40,7 @@ public class FaceDetection : MonoBehaviour
         {
             // Do something with the detected
             Debug.Log($"Face {face}");
+            
         }
     }
 
