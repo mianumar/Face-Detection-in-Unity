@@ -39,8 +39,6 @@ public class FaceDetection : MonoBehaviour
         foreach (var face in faces)
         {
             // Do something with the detected
-            // 
-            Debug.Log(face);
             Debug.Log($"Face {face}");
         }
     }
