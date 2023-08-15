@@ -20,7 +20,8 @@ public class FaceDetection : MonoBehaviour
     {
         GetComponent<Renderer>().material.mainTexture = webCamTexture;
         Mat frame = OpenCvSharp.Unity.TextureToMat(webCamTexture);
-        
+
+
         findNewFace(frame);
     }
 
