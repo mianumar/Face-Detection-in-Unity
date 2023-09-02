@@ -28,6 +28,7 @@ public class FaceDetection : MonoBehaviour
     void findNewFace( Mat frame)
     {
         CascadeClassifier cascadeClassifier = new CascadeClassifier(Application.dataPath + "/haarcascade_frontalcatface.xml");
+
         // Load the pre-trained face detection model
 
         Mat gray = new Mat();
