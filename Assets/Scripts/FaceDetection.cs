@@ -21,7 +21,6 @@ public class FaceDetection : MonoBehaviour
         GetComponent<Renderer>().material.mainTexture = webCamTexture;
         Mat frame = OpenCvSharp.Unity.TextureToMat(webCamTexture);
 
-
         findNewFace(frame);
     }
 
@@ -30,7 +29,6 @@ public class FaceDetection : MonoBehaviour
         CascadeClassifier cascadeClassifier = new CascadeClassifier(Application.dataPath + "/haarcascade_frontalcatface.xml");
 
         // Load the pre-trained face detection model
-
         Mat gray = new Mat();
         Cv2.CvtColor(frame, gray, ColorConversionCodes.BGR2GRAY);
         // Convert the frame to grayscale, as the face detection algorithm works on grayscale images
